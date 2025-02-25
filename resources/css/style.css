@@ -1,22 +1,11 @@
+* {
+    /* border: 1px solid red; */
+}
+
 
 /* Nav Bar */
 
-header {
-    display: flex;
-    justify-content: space-between;
-}
 
-ul {
-    display: inline-flex;
-}
-
-li {
-    list-style-type: none;
-}
-
-nav a {
-    text-decoration: none;
-}
 
 /* Banner section */
 
