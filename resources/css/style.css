@@ -1,11 +1,44 @@
 * {
     /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
 }
 
+#main {
+    position: relative;
+    top: 64px;
+
+}
 
 /* Nav Bar */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
 
+header span {
+    font-size: 32px;
+}
+
+ul {
+    display: inline-flex;
+}
+
+li {
+    list-style-type: none;
+    padding: 0  16px;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* Banner section */
 
@@ -17,7 +50,27 @@
 
 /* Courses section */
 
+#courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 72px;
+    background-color: lightgray;
+}
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
 
 /* Outreach section */
 
@@ -27,6 +80,8 @@
 
 
 
-@media only screen and (max-width: 520px) {
-
+@media screen and (max-width: 700px) {
+    .image-container {
+        display: none;
+    }
 }
