@@ -68,6 +68,9 @@ nav ul {
 li {
     list-style: none;
     padding-left: 1rem;
+}
+
+li a {
     text-decoration: none;
     color: #4A4A4A;
 }
@@ -124,17 +127,20 @@ button {
 #articles {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #articles .left {
     padding: 2rem 1.5rem;
     display: inline-flex;
     flex-direction: column;
+    width: 60%;
+    align-items: center;
 }
 
 .left img, 
 video {
-    width: 60%;
+    width: 90%;
 }
 
 #articles .right {
@@ -144,9 +150,14 @@ video {
 }
 
 .right.container {
-    padding: 1rem;
+    margin: 1rem;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.desc {
+    width: 65%;
+    height: auto;
 }
 
 .image-sq {
@@ -157,8 +168,8 @@ video {
 
 .image-sq img {
     /* display: block; */
-    height: 100%;
-    max-width: auto;
+    max-height: 100%;
+    width: auto;
 }
 
 /* Courses section */
