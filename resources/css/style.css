@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* overflow-x: hidden; */
 }
 
@@ -62,7 +62,6 @@ nav {
 nav ul {
     display: flex;
     text-align: center;
-    border: 1px solid blue;
 }
 
 li {
@@ -80,6 +79,10 @@ li a {
     align-items: center;
     height: 2rem;
     font-family: 'Trebuchet MS', sans-serif;
+}
+
+#courses h2, #outreach h2 {
+    text-align: center;
 }
 
 /* Banner section */
@@ -125,34 +128,34 @@ button {
 /* Articles section */
 
 #articles {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     width: 100%;
+    background-color: #F3F5F5;
 }
 
-#articles .left {
-    padding: 2rem 1.5rem;
-    display: inline-flex;
+.left {
+    margin: 2rem 1.5rem;
+    display: flex;
     flex-direction: column;
-    width: 60%;
-    align-items: center;
+    /* width: 60%; */
+    align-items: start;
 }
 
 .left img, 
 video {
-    width: 90%;
+    width: 60%;
 }
 
-#articles .right {
+.right {
     display: flex;
     flex-direction: column;
     width: 40%;
 }
 
 .right.container {
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+    /* margin: 1rem; */
+    display: inline-flex;
+    /* flex-wrap: wrap; */
 }
 
 .desc {
@@ -168,17 +171,55 @@ video {
 
 .image-sq img {
     /* display: block; */
-    max-height: 100%;
-    width: auto;
+    max-height: auto;
+    width: 100%;
 }
 
 /* Courses section */
 
+#courses {
+    padding: 2rem 4.5rem;
+    background-color: #D8D8D8;
+}
 
+#courses .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course {
+    max-width: 30%;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2rem;
+}
+
+.course img {
+    width: 100%;
+}
+
+.course .desc {
+    padding: 1rem;
+    display: inline;
+}
 
 /* Outreach section */
 
+#outreach {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    background-color: #F3F5F5;
+}
 
+#outreach .container {
+    display: inline-flex;
+}
+
+#outreach .left {
+    padding: 0 1.5rem;
+}
 
 /* Footer */
 
@@ -187,6 +228,11 @@ footer {
     justify-content: space-between;
     border-top: 1px solid #4A4A4A;
     padding: 16px 24px 50px;
+    background-color: #F3F5F5;
+}
+
+footer ul {
+    display: flex;
 }
 
 footer li {
