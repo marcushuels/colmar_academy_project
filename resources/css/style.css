@@ -1,12 +1,20 @@
+/* Universal */
+
 * {
-    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+    /* overflow-x: hidden; */
 }
 
-html {
+html,
+body {
     font-family: 'Century Gothic', sans-serif;
     color: #4A4A4A;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
 }
 
 #main {
@@ -14,53 +22,9 @@ html {
     top: 64px;
 }
 
-/* Nav Bar */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 24px;
-    border-bottom: 1px solid grey;
-    position: fixed;
-    z-index: 1;
-    background-color: #F3F5F5;
-    width: 100%;
-    align-items: center;
-}
-
-/* header img {
-    width: 40px;
-} */
-
-header a {
-    /* align-content: center; */
-    text-decoration: none;
-    color: #4A4A4A;
-}
-
-#logo {
-    display: flex;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    font-weight: 200;
-    align-items: center;
-    height: 32px;
-}
-
-ul {
-    display: flex;
-}
-
-li {
-    list-style-type: none;
-    padding-left: 16px;
-}
-
 h1,
 h2 {
-    font-family: Arial, sans-serif;
-    font-weight: 700;
+    font-family: 'Franklin Gothic', sans-serif;
     color: #4A4A4A;
 }
 
@@ -74,8 +38,45 @@ p {
     color: #4A4A4A;
 }
 
-.capitalized {
+.uppercase {
     text-transform: uppercase;
+}
+
+/* Nav Bar */
+
+header {
+    background-color: #FFF;
+    padding: 16px 24px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+li {
+    list-style: none;
+    padding-left: 1rem;
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 /* Banner section */
@@ -83,103 +84,89 @@ p {
 #banner {
     background-color: #D8D8D8;
     display: flex;
-    flex-wrap: wrap;
+    padding: 2rem;
     justify-content: center;
-    padding: 32px 24px; /* Might change this to margin on another element? */
+    align-items: center;
 }
 
 #banner img {
-    max-width: 60%;
+    width: 60%;
     height: auto;
 }
 
-#banner .text-container {
+#banner .start-here {
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: auto;
+    justify-content: space-between;
+    /* height: 300px; */
+    width: 40%;
+}
+
+.start-here h1 {
+    font-size: 3.5rem;
+}
+
+.start-here h3 {
+    margin: 1.5rem 0;
+    font-size: 2rem;
 }
 
 button {
+    color: #FFF;
+    padding: 0.5rem;
     background-color: #4A4A4A;
-    width: 100%;
-    border: 1px solid #4A4A4A;
-    color: #F3F5F5;
+    font-size: 1.5rem;
 }
 
 /* Articles section */
 
 #articles {
-    background-color: #F3F5F5;
-    display: flex;
-}
-
-.left {
-    /* width: 60%; */
-    padding: 32px 24px;
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 40%;
-}
-
-.left img {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.right img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-}
-
-/* Courses section */
-
-#courses {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 72px;
-    background-color: #D8D8D8;
-}
-
-.container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.description-container {
-    background-color: white;
-    display: flex;
+#articles .left {
+    padding: 2rem 1.5rem;
+    display: inline-flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 16px;
 }
 
-/* Outreach section */
+.left img, 
+video {
+    width: 60%;
+}
 
-#outreach {
+#articles .right {
     display: flex;
     flex-direction: column;
+    width: 40%;
+}
+
+.right.container {
+    padding: 1rem;
+    display: flex;
     align-items: center;
 }
 
-#outreach h2 {
-    margin: 32px auto;
+.image-sq {
+    width: 35%;
+    height: auto;
+    overflow: hidden;
 }
 
-#outreach .right {
-    margin: 0;
+.image-sq img {
+    /* display: block; */
+    height: 100%;
+    max-width: auto;
 }
 
-#outreach .container {
-    display: flex;
-}
+/* Courses section */
+
+
+
+/* Outreach section */
+
 
 
 /* Footer */
