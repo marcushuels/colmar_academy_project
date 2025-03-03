@@ -137,13 +137,14 @@ button {
     margin: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
-    /* width: 60%; */
-    align-items: start;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
 }
 
 .left img, 
 video {
-    width: 60%;
+    width: 100%;
 }
 
 .right {
@@ -175,6 +176,11 @@ video {
     width: 100%;
 }
 
+.read-more {
+    color: #37B6EE;
+    text-decoration: none;
+}
+
 /* Courses section */
 
 #courses {
@@ -197,6 +203,7 @@ video {
 
 .course img {
     width: 100%;
+    height: auto;
 }
 
 .course .desc {
